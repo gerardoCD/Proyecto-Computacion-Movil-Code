@@ -300,9 +300,13 @@
                                     <action selector="btnSignIn:" destination="U3U-7h-Cgk" eventType="touchUpInside" id="Xtu-Zy-218"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uu0-jq-Osv">
+                            <imageView contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foto-perfil" translatesAutoresizingMaskIntoConstraints="NO" id="uu0-jq-Osv">
                                 <rect key="frame" x="123" y="114" width="118" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fxQ-pw-5my" appends="YES" id="7MI-mk-sk4"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -314,10 +318,15 @@
                         <outlet property="lblLastName" destination="E4i-sV-LEW" id="Zg8-hf-s1u"/>
                         <outlet property="lblName" destination="t5M-kA-W28" id="owr-oA-VsU"/>
                         <outlet property="lblPayment" destination="aoE-dK-NM2" id="hed-jV-K7x"/>
-                        <outlet property="lblUser" destination="SOy-d8-yHU" id="7jV-2x-Mpg"/>
+                        <outlet property="lblUser" destination="TaM-ba-ctR" id="vEb-Oh-Bon"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRF-O2-9ZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="fxQ-pw-5my">
+                    <connections>
+                        <action selector="gstAction:" destination="U3U-7h-Cgk" id="40s-Aj-zkR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1079" y="936"/>
         </scene>
@@ -437,6 +446,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="A6x-SC-HmW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pet-pR-WrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -453,7 +463,6 @@
         <!--Home-->
         <scene sceneID="oNw-Di-yGB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wMY-vq-p1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tdZ-RO-UKC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="dA9-9T-WdQ"/>
                     <toolbarItems/>
@@ -466,6 +475,7 @@
                         <segue destination="PZQ-H1-mqn" kind="relationship" relationship="rootViewController" id="C9C-eC-97a"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMY-vq-p1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2973.5999999999999" y="131.52709359605913"/>
         </scene>
@@ -488,4 +498,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="foto-perfil" width="300" height="247"/>
+    </resources>
 </document>

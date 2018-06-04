@@ -17,6 +17,8 @@ class User: Object {
     @objc dynamic var lastName = ""
     @objc dynamic var Addres = ""
     @objc dynamic var paymentMethod = ""
+    @objc dynamic var total = 0
+    
 }
 
 class Boat: Object {
