@@ -8,12 +8,14 @@
 
 import UIKit
 
+
+
 class ViewControllerAboutUs: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +23,12 @@ class ViewControllerAboutUs: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnCorreo(_ sender: UIButton) {
+        UIApplication.shared.openURL(NSURL(string:"https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1528154713&rver=6.7.6640.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fauthRedirect%3dtrue%26RpsCsrfState%3da229cd4b-50b6-4fd0-38c9-075960400999&id=292841&whr=live.com.mx&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015")! as URL)
     }
-    */
-
+    
+    @IBAction func btnFacebook(_ sender: UIButton) {
+        UIApplication.shared.openURL(NSURL(string:"https://www.facebook.com/")! as URL)
+    }
+    
 }
