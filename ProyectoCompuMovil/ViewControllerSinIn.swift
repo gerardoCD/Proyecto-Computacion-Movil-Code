@@ -41,8 +41,8 @@ class ViewControllerSinIn: UIViewController, UINavigationControllerDelegate, UII
 
 
     @IBAction func btnSignIn(_ sender: UIButton) {
-       // if (lblUser.text == "" && lblName.text == "" && lblLastName.text == "" && lblAddres.text == "" && lblPayment.text == "") {
-          // let userTemp = User()
+       if (lblUser.text != "" && lblName.text != "" && lblLastName.text != "" && lblAddres.text != "" && lblPayment.text != "") {
+        
             userTemp.imagePerfil = imageData
         
            userTemp.user = lblUser.text!
@@ -57,17 +57,17 @@ class ViewControllerSinIn: UIViewController, UINavigationControllerDelegate, UII
            try! realm.write {
                realm.add(userTemp)
            }
-//            lblUser.text = ""
-//            lblName.text = ""
-//            lblLastName.text = ""
-//            lblAddres.text = ""
-//            lblPayment.text = ""
+            lblUser.text = ""
+            lblName.text = ""
+            lblLastName.text = ""
+            lblAddres.text = ""
+            lblPayment.text = ""
 
-            print("Registro exitoso")
+          
 
-//            }else{
+                }else{
 //            print("Poner una alerta de llenar campos")
-//            }
+            }
 
 
         print("Boton no sirve")
