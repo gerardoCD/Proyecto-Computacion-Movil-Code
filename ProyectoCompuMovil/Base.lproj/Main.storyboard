@@ -262,7 +262,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FBb-G0-68I"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="User" id="Hiu-DN-biQ"/>
+                    <tabBarItem key="tabBarItem" title="User" image="icons8-invitado-masculino-filled-30" id="Hiu-DN-biQ"/>
                     <connections>
                         <outlet property="imgUser" destination="tZ6-fH-PR5" id="t0W-eF-gRc"/>
                         <outlet property="lbName" destination="3hq-P1-CqF" id="eAd-E3-3hB"/>
@@ -529,7 +529,7 @@ We have the latest security technology for you to conifed in us</string>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="Vt9-5I-VpH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" id="n66-nh-Xmt"/>
+                    <tabBarItem key="tabBarItem" title="Add" image="icons8-subir-a-la-nube-filled-30" id="n66-nh-Xmt"/>
                     <connections>
                         <outlet property="imgBoat" destination="cHq-eb-lqD" id="Nwj-Tm-BWA"/>
                         <outlet property="lblPrice" destination="tez-DB-u6B" id="ScR-qf-wR6"/>
@@ -587,6 +587,8 @@ We have the latest security technology for you to conifed in us</string>
     <resources>
         <image name="barco2" width="512" height="512"/>
         <image name="foto-perfil" width="300" height="247"/>
+        <image name="icons8-invitado-masculino-filled-30" width="30" height="30"/>
+        <image name="icons8-subir-a-la-nube-filled-30" width="30" height="30"/>
         <image name="logo" width="400" height="240"/>
     </resources>
 </document>
