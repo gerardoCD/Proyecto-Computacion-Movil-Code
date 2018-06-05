@@ -10,6 +10,7 @@
 		C628B99C20C5F48B00FAA3C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628B99B20C5F48B00FAA3C1 /* User.swift */; };
 		C628B99E20C5F68D00FAA3C1 /* ViewControllerInformationUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628B99D20C5F68D00FAA3C1 /* ViewControllerInformationUser.swift */; };
 		C628B9A020C5FFA000FAA3C1 /* ViewControllerAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628B99F20C5FFA000FAA3C1 /* ViewControllerAboutUs.swift */; };
+		C628B9A220C6055100FAA3C1 /* ViewControllerUploadBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628B9A120C6055100FAA3C1 /* ViewControllerUploadBoat.swift */; };
 		C6D9E87720C5817E00FBD365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E87620C5817E00FBD365 /* AppDelegate.swift */; };
 		C6D9E87920C5817E00FBD365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E87820C5817E00FBD365 /* ViewController.swift */; };
 		C6D9E87C20C5817E00FBD365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E87A20C5817E00FBD365 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		C628B99B20C5F48B00FAA3C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C628B99D20C5F68D00FAA3C1 /* ViewControllerInformationUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInformationUser.swift; sourceTree = "<group>"; };
 		C628B99F20C5FFA000FAA3C1 /* ViewControllerAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAboutUs.swift; sourceTree = "<group>"; };
+		C628B9A120C6055100FAA3C1 /* ViewControllerUploadBoat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUploadBoat.swift; sourceTree = "<group>"; };
 		C6D9E87320C5817E00FBD365 /* ProyectoCompuMovil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoCompuMovil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D9E87620C5817E00FBD365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6D9E87820C5817E00FBD365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				C6D9E87820C5817E00FBD365 /* ViewController.swift */,
 				C6D9E8B020C5907C00FBD365 /* ViewControllerSinIn.swift */,
 				C628B99D20C5F68D00FAA3C1 /* ViewControllerInformationUser.swift */,
+				C628B9A120C6055100FAA3C1 /* ViewControllerUploadBoat.swift */,
 				C628B99F20C5FFA000FAA3C1 /* ViewControllerAboutUs.swift */,
 				C6D9E87A20C5817E00FBD365 /* Main.storyboard */,
 				C6D9E87D20C5817F00FBD365 /* Assets.xcassets */,
@@ -321,6 +324,7 @@
 				C6D9E8B120C5907C00FBD365 /* ViewControllerSinIn.swift in Sources */,
 				C6D9E8AF20C58EAE00FBD365 /* Models.swift in Sources */,
 				C6D9E87920C5817E00FBD365 /* ViewController.swift in Sources */,
+				C628B9A220C6055100FAA3C1 /* ViewControllerUploadBoat.swift in Sources */,
 				C628B99C20C5F48B00FAA3C1 /* User.swift in Sources */,
 				C628B9A020C5FFA000FAA3C1 /* ViewControllerAboutUs.swift in Sources */,
 				C628B99E20C5F68D00FAA3C1 /* ViewControllerInformationUser.swift in Sources */,

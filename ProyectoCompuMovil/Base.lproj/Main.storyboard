@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS7-If-pGE">
                                 <rect key="frame" x="108" y="611" width="147" height="30"/>
@@ -465,17 +465,21 @@ We have the latest security technology for you to conifed in us</string>
         <!--Add-->
         <scene sceneID="GgK-iO-sUX">
             <objects>
-                <viewController id="78a-DG-ebV" sceneMemberID="viewController">
+                <viewController id="78a-DG-ebV" customClass="ViewControllerUploadBoat" customModule="ProyectoCompuMovil" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bye-Eg-Szy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHq-eb-lqD">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barco2" translatesAutoresizingMaskIntoConstraints="NO" id="cHq-eb-lqD">
                                 <rect key="frame" x="41" y="136" width="292" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vIZ-Mh-3RS" appends="YES" id="BF7-fU-ENu"/>
+                                </connections>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f8P-PC-gPo">
-                                <rect key="frame" x="41" y="425" width="292" height="214"/>
+                                <rect key="frame" x="41" y="401" width="292" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -486,14 +490,35 @@ We have the latest security technology for you to conifed in us</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="btnAdd:" destination="78a-DG-ebV" eventType="touchUpInside" id="6Tr-SX-OEH"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="price" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tez-DB-u6B">
+                                <rect key="frame" x="83" y="344" width="197" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="Vt9-5I-VpH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" id="n66-nh-Xmt"/>
+                    <connections>
+                        <outlet property="imgBoat" destination="cHq-eb-lqD" id="Nwj-Tm-BWA"/>
+                        <outlet property="lblPrice" destination="tez-DB-u6B" id="ScR-qf-wR6"/>
+                        <outlet property="txtDescription" destination="f8P-PC-gPo" id="J3S-iq-noe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6th-2Z-R1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vIZ-Mh-3RS">
+                    <connections>
+                        <action selector="gstImage:" destination="78a-DG-ebV" id="ILL-hI-s13"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4919.1999999999998" y="131.52709359605913"/>
         </scene>
@@ -556,6 +581,7 @@ We have the latest security technology for you to conifed in us</string>
         </scene>
     </scenes>
     <resources>
+        <image name="barco2" width="512" height="512"/>
         <image name="foto-perfil" width="300" height="247"/>
         <image name="logo" width="400" height="240"/>
     </resources>

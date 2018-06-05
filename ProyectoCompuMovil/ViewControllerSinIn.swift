@@ -1,8 +1,6 @@
 //
 //  ViewControllerSinIn.swift
 //  ProyectoCompuMovil
-//
-//  Created by Caro Kennedy on 04/06/18.
 //  Copyright © 2018 Gerardo Castillo. All rights reserved.
 //
 
@@ -50,7 +48,6 @@ class ViewControllerSinIn: UIViewController, UINavigationControllerDelegate, UII
             userTemp.lastName = lblLastName.text!
             userTemp.Addres = lblAddres.text!
             userTemp.paymentMethod = lblPayment.text!
-            print("Cargo bien los datos")
             // Get the default Realm
            let realm = try! Realm()
 //            // Persist your data easily
@@ -62,6 +59,7 @@ class ViewControllerSinIn: UIViewController, UINavigationControllerDelegate, UII
             lblLastName.text = ""
             lblAddres.text = ""
             lblPayment.text = ""
+            imgPerfil.image = UIImage(named: "foto-perfil")
 
           
 
@@ -69,8 +67,6 @@ class ViewControllerSinIn: UIViewController, UINavigationControllerDelegate, UII
 //            print("Poner una alerta de llenar campos")
             }
 
-
-        print("Boton no sirve")
     }
     
     @IBAction func gstAction(_ sender: UITapGestureRecognizer) {

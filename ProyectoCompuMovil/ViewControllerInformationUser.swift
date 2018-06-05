@@ -2,11 +2,11 @@
 //  ViewControllerInformationUser.swift
 //  ProyectoCompuMovil
 //
-//  Created by Caro Kennedy on 04/06/18.
 //  Copyright © 2018 Gerardo Castillo. All rights reserved.
 //
 
 import UIKit
+import RealmSwift
 
 class ViewControllerInformationUser: UIViewController {
 
@@ -37,14 +37,6 @@ class ViewControllerInformationUser: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

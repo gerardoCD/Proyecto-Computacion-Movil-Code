@@ -2,7 +2,6 @@
 //  User.swift
 //  ProyectoCompuMovil
 //
-//  Created by Caro Kennedy on 04/06/18.
 //  Copyright © 2018 Gerardo Castillo. All rights reserved.
 //
 
@@ -14,6 +13,7 @@ public struct UserData {
     static var user = ""
     static var passwd = ""
     static var name = ""
-    static var  addres = ""
+    static var addres = ""
     static var paymentmethod = ""
+    static var total = 0 
 }

@@ -2,7 +2,6 @@
 //  Models.swift
 //  ProyectoCompuMovil
 //
-//  Created by Caro Kennedy on 04/06/18.
 //  Copyright © 2018 Gerardo Castillo. All rights reserved.
 //
 
