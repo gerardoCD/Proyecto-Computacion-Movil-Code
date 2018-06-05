@@ -9,11 +9,20 @@
 import UIKit
 
 class ViewControllerExtraServices: UIViewController {
-
+    var costBoat = 0
+    
+    @IBOutlet weak var sw1: UISwitch!
+    
+    @IBOutlet weak var sw2: UISwitch!
+    
+    @IBOutlet weak var sw3: UISwitch!
+    
+    @IBOutlet weak var sw5: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +30,39 @@ class ViewControllerExtraServices: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func actsw1(_ sender: UISwitch) {
+        if(sender.isOn){
+            
+        }else{
+            
+        }
     }
-    */
+    
+    @IBAction func actsw2(_ sender: UISwitch) {
+        if sender.isOn {
+            
+        }else{
+            
+        }
+    }
+    
+    @IBAction func actsw3(_ sender: UISwitch) {
+        if sender.isOn{
+            
+        }else{
+            
+        }
+    }
+    
+    @IBAction func actsw4(_ sender: UISwitch) {
+        if sender.isOn {
+            
+        }else{
+            
+        }
+    }
+    
+    
+  
 
 }

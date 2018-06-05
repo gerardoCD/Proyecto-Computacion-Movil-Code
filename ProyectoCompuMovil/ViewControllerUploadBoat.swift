@@ -32,9 +32,15 @@ class ViewControllerUploadBoat: UIViewController, UINavigationControllerDelegate
     @IBAction func btnAdd(_ sender: UIButton) {
         if (lblPrice.text != "" && txtDescription.text != "" && !imageData.isEmpty) {
             // Get the default Realm
+            let config = Realm.Configuration(
+                schemaVersion: 2,
+                migrationBlock: { migration, oldSchemaVersion in
+            })
+            Realm.Configuration.defaultConfiguration = config
             let realm = try! Realm()
             boatTemp.imageBoat = imageData
-            boatTemp.descriptions = txtDescription.text + lblPrice.text! + " pesos Méxicanos"
+            boatTemp.descriptions = txtDescription.text 
+            boatTemp.precio = Int(lblPrice.text!)!
             try! realm.write {
                 realm.add(boatTemp)
             }

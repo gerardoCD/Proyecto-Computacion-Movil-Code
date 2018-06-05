@@ -24,7 +24,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnLogIn(_ sender: UIButton) {
+        let config = Realm.Configuration(
+            schemaVersion: 2,
+            migrationBlock: { migration, oldSchemaVersion in
+        })
+        Realm.Configuration.defaultConfiguration = config
         let realm = try! Realm()
+        
         let user = realm.objects(User.self).filter("user = '\(lblUser.text!)' and lastName = '\(lblPass.text!)'")
        
         if !user.isEmpty{

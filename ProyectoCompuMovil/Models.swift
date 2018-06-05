@@ -23,6 +23,7 @@ class User: Object {
 class Boat: Object {
     @objc dynamic var imageBoat = Data()
     @objc dynamic var descriptions = ""
+    @objc dynamic var precio = 0
 
 }
 

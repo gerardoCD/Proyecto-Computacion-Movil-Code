@@ -49,6 +49,11 @@ class ViewControllerSinIn: UIViewController, UINavigationControllerDelegate, UII
             userTemp.Addres = lblAddres.text!
             userTemp.paymentMethod = lblPayment.text!
             // Get the default Realm
+        let config = Realm.Configuration(
+            schemaVersion: 2,
+            migrationBlock: { migration, oldSchemaVersion in
+        })
+        Realm.Configuration.defaultConfiguration = config
            let realm = try! Realm()
 //            // Persist your data easily
            try! realm.write {
