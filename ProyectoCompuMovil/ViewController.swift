@@ -44,6 +44,12 @@ class ViewController: UIViewController {
             
         }else{
             print("Usuario o Contraseña incorrecta")
+            let alertController = UIAlertController(title: "Usuario o Contraseña incorrectos", message: "Vuelve a Intentarlo", preferredStyle: .alert)
+            
+            let action1 = UIAlertAction(title: "Aceptar", style: .default) { (action:UIAlertAction) in
+            }
+            alertController.addAction(action1)
+            self.present(alertController, animated: true, completion: nil)
         }
        
         

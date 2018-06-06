@@ -65,11 +65,23 @@ class ViewControllerSinIn: UIViewController, UINavigationControllerDelegate, UII
             lblAddres.text = ""
             lblPayment.text = ""
             imgPerfil.image = UIImage(named: "foto-perfil")
-
+        let alertController = UIAlertController(title: "Succes", message: "Tu registro fue exitoso", preferredStyle: .alert)
+        
+        let action1 = UIAlertAction(title: "Aceptar", style: .default) { (action:UIAlertAction) in
+        }
+        alertController.addAction(action1)
+        self.present(alertController, animated: true, completion: nil)
+  
           
 
                 }else{
-//            print("Poner una alerta de llenar campos")
+        let alertController = UIAlertController(title: "Llenar todos los campos", message: "Vuelve a Intentarlo", preferredStyle: .alert)
+        
+        let action1 = UIAlertAction(title: "Aceptar", style: .default) { (action:UIAlertAction) in
+        }
+        alertController.addAction(action1)
+        self.present(alertController, animated: true, completion: nil)
+        
             }
 
     }
@@ -98,7 +110,12 @@ class ViewControllerSinIn: UIViewController, UINavigationControllerDelegate, UII
         }
         else
         {
-            //Error message
+            let alertController = UIAlertController(title: "Imagen muy pesada", message: "Intenta con otra imagen", preferredStyle: .alert)
+            
+            let action1 = UIAlertAction(title: "Aceptar", style: .default) { (action:UIAlertAction) in
+            }
+            alertController.addAction(action1)
+            self.present(alertController, animated: true, completion: nil)
         }
         
         self.dismiss(animated: true, completion: nil)

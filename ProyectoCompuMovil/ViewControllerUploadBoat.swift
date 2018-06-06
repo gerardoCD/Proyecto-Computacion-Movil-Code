@@ -48,9 +48,20 @@ class ViewControllerUploadBoat: UIViewController, UINavigationControllerDelegate
             txtDescription.text = ""
             imgBoat.image = UIImage(named: "barco2")
             lblPrice.text = ""
+            let alertController = UIAlertController(title: "Success", message: "Tu barco a sido registrado", preferredStyle: .alert)
+            
+            let action1 = UIAlertAction(title: "Aceptar", style: .default) { (action:UIAlertAction) in
+            }
+            alertController.addAction(action1)
+            self.present(alertController, animated: true, completion: nil)
             
         }else{
-                print("Poner una alerta de llenar campos")
+            let alertController = UIAlertController(title: "Llena todos los campos", message: "Vuelve a Intentarlo", preferredStyle: .alert)
+            
+            let action1 = UIAlertAction(title: "Aceptar", style: .default) { (action:UIAlertAction) in
+            }
+            alertController.addAction(action1)
+            self.present(alertController, animated: true, completion: nil)
         }
     }
     
